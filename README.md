@@ -32,16 +32,16 @@ This repository was created to build an application that can model and solve Ope
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://github.com/amarinos/Vehicle-routing-optimization/contributors.svg?style=for-the-badge
-[contributors-url]: https://github.com/amarinos/Vehicle-routing-optimization/contributors
-[forks-shield]: https://github.com/amarinos/Vehicle-routing-optimization/contributors.svg?style=for-the-badge
-[forks-url]: https://github.com/amarinos/Vehicle-routing-optimization/contributors/network/members
-[stars-shield]: https://github.com/amarinos/Vehicle-routing-optimization/contributors.svg?style=for-the-badge
-[stars-url]: https://github.com/amarinos/Vehicle-routing-optimization/contributors/stargazers
-[issues-shield]: https://github.com/amarinos/Vehicle-routing-optimization/contributors.svg?style=for-the-badge
-[issues-url]: https://github.com/amarinos/Vehicle-routing-optimization/contributors/issues
-[license-shield]: https://github.com/amarinos/Vehicle-routing-optimization/contributors.svg?style=for-the-badge
-[license-url]: https://github.com/amarinos/Vehicle-routing-optimization/contributors/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/amarinos/Vehicle-routing-optimization.svg?style=for-the-badge
+[contributors-url]: https://github.com/amarinos/Vehicle-routing-optimization/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/amarinos/Vehicle-routing-optimization.svg?style=for-the-badge
+[forks-url]: https://github.com/amarinos/Vehicle-routing-optimization/network/members
+[stars-shield]: https://img.shields.io/github/stars/amarinos/Vehicle-routing-optimization.svg?style=for-the-badge
+[stars-url]: https://github.com/amarinos/Vehicle-routing-optimization/stargazers
+[issues-shield]: https://img.shields.io/github/issues/amarinos/Vehicle-routing-optimization.svg?style=for-the-badge
+[issues-url]: https://github.com/amarinos/Vehicle-routing-optimization/issues
+[license-shield]: https://img.shields.io/github/license/amarinos/Vehicle-routing-optimization.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/antonios-marinos-0492b175/
 [product-screenshot]: images/screenshot.png
