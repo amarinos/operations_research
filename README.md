@@ -12,7 +12,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
+[![Codacy Security Scan](https://github.com/amarinos/Vehicle-routing-optimization/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/amarinos/Vehicle-routing-optimization/actions/workflows/codacy-analysis.yml)
 
 
 # Vehicle routing examples with google ortools
