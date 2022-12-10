@@ -10,7 +10,7 @@ from urllib.request import urlopen
 def create_distance_matrix(addresses, api_key):
   # Distance Matrix API only accepts 100 elements per request, so get rows in multiple requests.
   max_elements = 100
-  num_addresses = len(addresses) # 16 in this example.
+  num_addresses = len(addresses)
   # Maximum number of rows that can be computed per request (6 in this example).
   max_rows = max_elements // num_addresses
   # num_addresses = q * max_rows + r (q = 2 and r = 4 in this example).
