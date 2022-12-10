@@ -7,8 +7,7 @@ from ortools.constraint_solver import pywrapcp
 
 def create_data_model():
     """Stores the data for the problem."""
-    data = {}
-    data['distance_matrix'] = [
+    distance_matrix = [
         [
             0, 548, 776, 696, 582, 274, 502, 194, 308, 194, 536, 502, 388, 354,
             468, 776, 662
@@ -78,8 +77,8 @@ def create_data_model():
             536, 194, 798, 0
         ],
     ]
-    data['num_vehicles'] = 4
-    data['depot'] = 0
+    num_vehicles = 4
+    depot = 0
     return data
 
 
