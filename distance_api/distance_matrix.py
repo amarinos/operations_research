@@ -1,9 +1,5 @@
 from __future__ import division
 from __future__ import print_function
-import os
-import sys
-topdir = os.path.join(os.path.dirname(__file__), "..")
-sys.path.append(topdir)
 import json
 from urllib.request import urlopen
 
