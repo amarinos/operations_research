@@ -12,18 +12,12 @@ class RoutingOptimizer:
 
     def add_address(self,address):
         self.addresses.append(address)
-        return self.addresses
 
     def remove_address(self,address):
         self.addresses.remove(address)
-        return self.addresses
 
     def create_distance_matrix(self):
-        try:
-            
             self.distance_matrix = create_distance_matrix(self.addresses, self.api_key)
-        except:
-            print("Error in creating distance matrix")
 
     def optimize_routes_tsp(self,):
         results = optimize_routes(self.distance_matrix, self.depot)
