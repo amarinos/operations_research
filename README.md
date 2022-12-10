@@ -11,7 +11,8 @@ This repository was created to build an application that can model and solve Ope
 2. Create folder structure, splitting: optimisation, distance api, solving the complete problem
 
 
-
+//will be added to readme in the end
+conda create -n vhp python=3.8 anaconda
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
