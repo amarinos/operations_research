@@ -2,7 +2,6 @@ from or_tools.travelling_salesman_problem import optimize_routes
 from distance_api.distance_matrix import create_distance_matrix
 from constants import api_key
 
-# Enter addresses
 class RoutingOptimizer:
     def __init__(self,addresses = [],depot= 0, api_key = api_key):
         self.addresses = addresses
@@ -11,6 +10,7 @@ class RoutingOptimizer:
         self.distance_matrix = None
 
     def add_address(self,address):
+        # Enter addresses
         self.addresses.append(address)
 
     def remove_address(self,address):
