@@ -22,8 +22,10 @@ class RoutingOptimizer:
 
     def optimize_routes_tsp(self,):
         results = optimize_routes(self.distance_matrix, self.depot)
-        return results
+        location_list = [self.addresses[i] for i in results[:-1]]
+        return location_list,results
 
     def create_map(self,):
         results = visualize_map(self.addresses)
         return results
+        

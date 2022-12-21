@@ -8,14 +8,17 @@ def print_solution(manager, routing, solution):
     index = routing.Start(0)
     plan_output = 'Route for vehicle 0:\n'
     route_distance = 0
+    index_list = [index]
     while not routing.IsEnd(index):
         plan_output += ' {} ->'.format(manager.IndexToNode(index))
         previous_index = index
         index = solution.Value(routing.NextVar(index))
+        index_list.append(index)
         route_distance += routing.GetArcCostForVehicle(previous_index, index, 0)
     plan_output += ' {}\n'.format(manager.IndexToNode(index))
     print(plan_output)
     plan_output += 'Route distance: {}miles\n'.format(route_distance)
+    return(index_list)
 
 
 def optimize_routes(distance_matrix, depot):
@@ -50,8 +53,8 @@ def optimize_routes(distance_matrix, depot):
 
     # Print solution on console.
     if solution:
-        print_solution(manager, routing, solution)
-        return True
+        index_list = print_solution(manager, routing, solution)
+        return index_list
     else:
         return False
 
