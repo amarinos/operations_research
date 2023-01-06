@@ -57,7 +57,3 @@ def optimize_routes(distance_matrix, depot):
         return index_list
     else:
         return False
-
-
-if __name__ == '__main__':
-    optimize_routes()

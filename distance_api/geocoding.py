@@ -30,7 +30,6 @@ def map_points(lat:list, lng:list ):
                 lon=lng)
     )
     p.circle(x="lon", y="lat", size=15, fill_color="blue", fill_alpha=0.8, source=source)
-
     return(p)
 
 def visualize_map(locations:list):

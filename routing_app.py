@@ -47,3 +47,42 @@ class RoutingOptimizer:
         results = visualize_map(self.addresses)
         return results
         
+class VehicleRouting:
+    """
+    This class enables users to define and solve the vehicle routing problem.
+    It uses the google distance API and the google OR-tools
+    """
+    def __init__(self,addresses = [],demand = [], depots= [], api_key = api_key):
+        self.addresses = addresses
+        self.demand = demand
+        self.depots = depots
+        self.api_key = api_key
+        self.distance_matrix = None
+
+    def add_address(self,address):
+        """
+        Add an address to the addresses list
+        """
+        self.addresses.append(address)
+
+    def remove_address(self,address):
+        """
+        Remove an address from the addresses list
+        """
+        self.addresses.remove(address)
+
+    def create_distance_matrix(self):
+        """
+        Call the google distance API for the defined addresses parameter
+        Calculates the distance_matrix and saves it within the class
+        """
+        self.distance_matrix = create_distance_matrix(self.addresses, self.api_key)
+
+    def optimize_routes_tsp(self,):
+        results = optimize_routes(self.distance_matrix, self.depot)
+        location_list = [self.addresses[i] for i in results[:-1]]
+        return location_list,results
+
+    def create_map(self,):
+        results = visualize_map(self.addresses)
+        return results
